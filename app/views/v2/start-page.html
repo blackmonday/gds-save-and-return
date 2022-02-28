@@ -1,0 +1,104 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Home – GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+  <!-- ************************** -->
+  <!-- ************************** -->
+  <!-- PHASE BANNER AND BACK LINK -->
+  <div class="govuk-grid-row govuk-!-margin-bottom-9" style="margin-top:-50px">
+    <div class="govuk-grid-column-full">
+      <div class="govuk-phase-banner">
+        <p class="govuk-phase-banner__content">
+          <strong class="govuk-tag govuk-phase-banner__content__tag">
+            beta
+          </strong>
+          <span class="govuk-phase-banner__text">
+            This is a new service – your <a class="govuk-link" href="#">feedback</a> will help us to improve it.
+          </span>
+        </p>
+      </div>
+      <a href="javascript:history.back()" class="govuk-back-link">Back</a>
+    </div>
+  </div>
+
+  <!-- ********* -->
+  <!-- ********* -->
+  <!-- MAIN BODY -->
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <h1 class="govuk-heading-xl">Claim for loss of notice</h1>
+
+      <p class="govuk-body">You’re entitled to claim money if your employer has failed to give you the minimum statutory notice period. The minimum notice is:</p>
+      <ul class="govuk-list govuk-list--bullet">
+        <li>a weeks notice if you have been employed between a calendar month and less than 2 years</li>
+        <li>a weeks notice for each complete year you’ve worked if you have been employed for 2 years or more (up to a maximum of 12 weeks for 12 years and over)</li>
+      </ul>
+
+      <div class="govuk-warning-text">
+        <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
+        <strong class="govuk-warning-text__text">
+          <span class="govuk-warning-text__assistive">Warning</span>
+          Because you’ve been made redundant, it’s very important you apply for employment related benefits such as Universal Credit and New Style Jobseeker’s Allowance.
+        </strong>
+      </div>
+
+      <p class="govuk-body">If you later apply for loss of notice compensation, we’ll ask you about benefits you applied for during your notice period. We deduct them or benefits you were eligible for from your compensation. This includes any:</p>
+      <ul class="govuk-list govuk-list--bullet govuk-!-margin-bottom-9">
+        <li>new benefits you were awarded during your notice period</li>
+        <li>increase in existing benefits</li>
+        <li>benefits you could have been awarded during your notice period if you’d applied for them</li>
+      </ul>
+
+      <div class="govuk-form-group">
+        <fieldset class="govuk-fieldset" aria-describedby="changed-name-hint">
+          <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+            <h2 class="govuk-fieldset__heading">
+              Do you want to claim compensation for loss of notice?
+            </h2>
+          </legend>
+          <div id="changed-name-hint" class="govuk-body">
+            We will send you an email asking you to complete a second online form after your notice period ends. You will need to complete this form so that we can pay your notice pay.
+          </div>
+          <div class="govuk-radios govuk-radios--inline" data-module="govuk-radios">
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="changed-name" name="changed-name" type="radio" value="yes">
+              <label class="govuk-label govuk-radios__label" for="changed-name">
+                Yes
+              </label>
+            </div>
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="changed-name-2" name="changed-name" type="radio" value="no">
+              <label class="govuk-label govuk-radios__label" for="changed-name-2">
+                No
+              </label>
+            </div>
+          </div>
+        </fieldset>
+      </div>
+
+      <button class="govuk-button" data-module="govuk-button">
+        Continue
+      </button>
+    </div>
+  </div>
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-full">
+          <ul class="app-task-list__items" style="padding-left:0; margin-top: 0;">
+            <li class="app-task-list__item" style="border: 0">
+              <a href="#" class="app-task-list__task-name">
+                  Cancel and delete all details
+              </a>
+              <a href="progress-saved" class="app-task-list__tag">Save progress</a>
+            </li>
+          </ul>
+    </div>
+  </div>
+
+{% endblock %}

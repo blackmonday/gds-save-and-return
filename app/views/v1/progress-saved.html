@@ -1,0 +1,62 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Home – GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+  <!-- ************************** -->
+  <!-- ************************** -->
+  <!-- PHASE BANNER AND BACK LINK -->
+  <div class="govuk-grid-row govuk-!-margin-bottom-9" style="margin-top:-50px">
+    <div class="govuk-grid-column-full">
+      <div class="govuk-phase-banner">
+        <p class="govuk-phase-banner__content">
+          <strong class="govuk-tag govuk-phase-banner__content__tag">
+            beta
+          </strong>
+          <span class="govuk-phase-banner__text">
+            This is a new service – your <a class="govuk-link" href="#">feedback</a> will help us to improve it.
+          </span>
+        </p>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+  <!-- ************************** -->
+  <!-- ************************** -->
+  <!-- PHASE BANNER AND BACK LINK -->
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <div class="govuk-panel govuk-panel--confirmation">
+        <h1 class="govuk-panel__title">
+          Progress saved
+        </h1>
+      </div>
+
+      <div class="govuk-!-padding-bottom-9"></div>
+
+      <a href="javascript:history.back()" class="govuk-button govuk-button--secondary" data-module="govuk-button">
+        Continue with your claim
+      </a>
+
+      <p class="govuk-body">or</p>
+
+      <a href="../" class="govuk-button govuk-button--secondary" data-module="govuk-button">
+        Sign out
+      </a>
+
+      <p class="govuk-body">You’ll be able to return to this claim at any point over the next 14 days and pick up where you left off.</p>
+
+    </div>
+  </div>
+
+{% endblock %}

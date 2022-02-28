@@ -1,0 +1,52 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Home – GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <h1 class="govuk-heading-xl">Verifying your identity</h1>
+
+      <div class="govuk-warning-text">
+        <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
+        <strong class="govuk-warning-text__text">
+          <span class="govuk-warning-text__assistive">Warning</span>
+          You cannot apply to the Insolvency Service if you resigned from your position.
+        </strong>
+      </div>
+
+      <div class="govuk-inset-text">
+        <p class="govuk-heading-s">We need to verify your identity before we can make a payment.</p>
+
+        <p class="govuk-body">You'll receive your payment faster if you verify your identity with GOV.UK Verify and you can also resume a claim you have already started.</p>
+      </div>
+
+      <p class="govuk-body">You can claim money if you've lost your job because your employer has been made insolvent.</p>
+      <p class="govuk-body">Use this service if:</p>
+      <ul class="govuk-list govuk-list--bullet">
+        <li>your employment has been terminated by your employer</li>
+        <li>you have a case reference number</li>
+        <li>you have your National Insurance number</li>
+        <li>you have an email address</li>
+      </ul>
+      <p class="govuk-body">If you don't enter any information for more than 30 minutes, then your claim will time out and you'll need to start again.</p>
+
+      <button class="govuk-button" data-module="govuk-button">
+        New claim
+      </button>
+
+      <p class="govuk-body">or</p>
+
+      <a href="sign-in-to-continue-your-claim" class="govuk-button govuk-button--secondary" data-module="govuk-button">
+        Continue your claim
+      </a>
+
+    </div>
+  </div>
+
+{% endblock %}

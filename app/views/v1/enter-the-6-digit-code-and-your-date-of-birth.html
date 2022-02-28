@@ -1,0 +1,85 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Home – GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <h1 class="govuk-heading-xl">Enter the 6-digit code and your date of birth</h1>
+
+      <div class="govuk-inset-text">
+        <p class="govuk-body">Check your email for a 6-digit code.</p>
+
+        <p class="govuk-body">The email you gave us was:<br/>
+        <span class="govuk-!-font-weight-bold">lee.smithson@email.com</span></p>
+
+        <p class="govuk-body">  We won’t send you a code if:</p>
+        <ul class="govuk-list govuk-list--bullet">
+          <li>you’ve already submitted a claim</li>
+          <li>your claim was started more than 14 days ago</li>
+          <li>we don’t recognise that email address</li>
+        </ul>
+
+        <p class="govuk-body">The code will only work for 60 minutes.</p>
+      </div>
+
+      <div class="govuk-form-group">
+        <label class="govuk-label govuk-!-font-weight-bold" for="event-name">6-digit code</label>
+        <div id="event-name-hint" class="govuk-hint">
+          For example, 037148
+        </div>
+        <input class="govuk-input govuk-input--width-10" id="event-name" name="event-name" type="text">
+      </div>
+
+      <div class="govuk-form-group">
+        <fieldset class="govuk-fieldset" role="group" aria-describedby="passport-issued-hint">
+          <legend class="govuk-fieldset__legend govuk-!-font-weight-bold">
+            Date of birth
+          </legend>
+          <div id="passport-issued-hint" class="govuk-hint">
+            For example, 27 3 2007
+          </div>
+          <div class="govuk-date-input" id="passport-issued">
+            <div class="govuk-date-input__item">
+              <div class="govuk-form-group">
+                <label class="govuk-label govuk-date-input__label" for="passport-issued-day">
+                  Day
+                </label>
+                <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="passport-issued-day" name="passport-issued-day" type="text" pattern="[0-9]*" inputmode="numeric">
+              </div>
+            </div>
+            <div class="govuk-date-input__item">
+              <div class="govuk-form-group">
+                <label class="govuk-label govuk-date-input__label" for="passport-issued-month">
+                  Month
+                </label>
+                <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="passport-issued-month" name="passport-issued-month" type="text" pattern="[0-9]*" inputmode="numeric">
+              </div>
+            </div>
+            <div class="govuk-date-input__item">
+              <div class="govuk-form-group">
+                <label class="govuk-label govuk-date-input__label" for="passport-issued-year">
+                  Year
+                </label>
+                <input class="govuk-input govuk-date-input__input govuk-input--width-4" id="passport-issued-year" name="passport-issued-year" type="text" pattern="[0-9]*" inputmode="numeric">
+              </div>
+            </div>
+          </div>
+
+        </fieldset>
+      </div>
+
+
+      <a href="claim-for-reduncancy-an-monies-saved" class="govuk-button" data-module="govuk-button">
+        Continue
+      </a>
+
+    </div>
+  </div>
+
+{% endblock %}
