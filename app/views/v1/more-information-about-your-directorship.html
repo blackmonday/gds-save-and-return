@@ -7,7 +7,34 @@
 
 {% block content %}
 
-  <div class="govuk-grid-row">
+<!-- ************************** -->
+<!-- ************************** -->
+<!-- PHASE BANNER AND BACK LINK -->
+<div class="govuk-grid-row govuk-!-margin-bottom-9" style="margin-top:-50px">
+  <div class="govuk-grid-column-full">
+
+    <div class="govuk-phase-banner">
+      <p class="govuk-phase-banner__content">
+        <strong class="govuk-tag govuk-phase-banner__content__tag">
+          beta
+        </strong>
+        <span class="govuk-phase-banner__text">
+          This is a new service – your <a class="govuk-link" href="#">feedback</a> will help us to improve it.
+        </span>
+      </p>
+    </div>
+
+    <a href="javascript:history.back()" class="govuk-back-link">Back</a>
+
+  </div>
+</div>
+
+
+
+
+
+
+<div class="govuk-grid-row">
     <div class="govuk-grid-column-two-thirds">
 
       <h1 class="govuk-heading-xl">More information about your directorship</h1>
@@ -39,23 +66,36 @@
 
       <button class="govuk-button" data-module="govuk-button">
         Continue
-      </button>
+      </button
+
 
     </div>
+
   </div>
 
+  <!-- *************** -->
+  <!-- *************** -->
+  <!-- *************** -->
+  <!-- CANCEL AND SAVE -->
   <div class="govuk-grid-row">
     <div class="govuk-grid-column-full">
-          <ul class="app-task-list__items" style="padding-left:0; margin-top: 0;">
-            <li class="app-task-list__item" style="border: 0">
-              <a href="#" class="app-task-list__task-name">
-                  Cancel and delete all details
-              </a>
-              <a href="progress-saved" class="app-task-list__tag">Save progress</a>
-            </li>
-          </ul>
+
+        <ul class="app-task-list__items" style="padding-left:15px; margin-top:-0px;">
+          <li class="app-task-list__item" style="border: 0">
+            <a href="#" class="app-task-list__task-name" style="padding-top:8px;">
+                Cancel and delete all details
+            </a>
+            <!--<a href="progress-saved" class="app-task-list__tag">Save progress</a>-->
+            <a href="progress-saved" class="govuk-button govuk-button--secondary app-task-list__tag" data-module="govuk-button">
+              Save progress
+            </a>
+          </li>
+        </ul>
+
     </div>
   </div>
+
+
 
 
 {% endblock %}
