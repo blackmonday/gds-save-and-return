@@ -14,17 +14,24 @@
 
       <p class="govuk-body">Tell us the  email address used to save your claim.</p>
 
-      <div class="govuk-form-group">
-        <label class="govuk-label govuk-!-font-weight-bold" for="event-name">Email address</label>
-        <div id="event-name-hint" class="govuk-hint">
-          We’ll only use this to send you information about this claim.
-        </div>
-        <input class="govuk-input" id="event-name" name="event-name" type="text">
-      </div>
+      <form class="form" action="enter-the-6-digit-code-and-your-date-of-birth" method="post">
+        <div class="govuk-form-group">
+          <fieldset class="govuk-fieldset">
 
-      <a href="enter-the-6-digit-code-and-your-date-of-birth" class="govuk-button" data-module="govuk-button">
-        Continue
-      </a>
+            <label class="govuk-label govuk-!-font-weight-bold" for="claimant-email">Email address</label>
+            <div id="claimant-email-hint" class="govuk-hint">
+              We’ll only use this to send you information about this claim.
+            </div>
+            <input class="govuk-input" id="claimant-email" name="claimant-email" type="text">
+
+          </fieldset>
+        </div>
+
+        <button class="govuk-button" data-module="govuk-button">
+          Continue
+        </button>
+
+      </form>
 
     </div>
   </div>
