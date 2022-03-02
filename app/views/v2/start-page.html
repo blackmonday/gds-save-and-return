@@ -7,97 +7,77 @@
 
 {% block content %}
 
-  <!-- ************************** -->
-  <!-- ************************** -->
-  <!-- PHASE BANNER AND BACK LINK -->
-  <div class="govuk-grid-row govuk-!-margin-bottom-9" style="margin-top:-50px">
-    <div class="govuk-grid-column-full">
-      <div class="govuk-phase-banner">
-        <p class="govuk-phase-banner__content">
-          <strong class="govuk-tag govuk-phase-banner__content__tag">
-            beta
-          </strong>
-          <span class="govuk-phase-banner__text">
-            This is a new service – your <a class="govuk-link" href="#">feedback</a> will help us to improve it.
-          </span>
-        </p>
-      </div>
-      <a href="javascript:history.back()" class="govuk-back-link">Back</a>
-    </div>
-  </div>
+<!-- ************************** -->
+<!-- ************************** -->
+<!-- PHASE BANNER AND BACK LINK -->
+<div class="govuk-grid-row govuk-!-margin-bottom-9" style="margin-top:-50px">
+  <div class="govuk-grid-column-full">
 
-  <!-- ********* -->
-  <!-- ********* -->
-  <!-- MAIN BODY -->
+    <div class="govuk-phase-banner">
+      <p class="govuk-phase-banner__content">
+        <strong class="govuk-tag govuk-phase-banner__content__tag">
+          beta
+        </strong>
+        <span class="govuk-phase-banner__text">
+          This is a new service – your <a class="govuk-link" href="#">feedback</a> will help us to improve it.
+        </span>
+      </p>
+    </div>
+
+    <!--<a href="javascript:history.back()" class="govuk-back-link">Back</a>-->
+
+  </div>
+</div>
+
+
+
+
+
+
+
   <div class="govuk-grid-row">
     <div class="govuk-grid-column-two-thirds">
 
-      <h1 class="govuk-heading-xl">Claim for loss of notice</h1>
+      <h1 class="govuk-heading-xl">Claim for redundancy and monies owed</h1>
 
-      <p class="govuk-body">You’re entitled to claim money if your employer has failed to give you the minimum statutory notice period. The minimum notice is:</p>
+      <p class="govuk-body">You can claim money if you've lost your job because your employer has been made insolvent.</p>
+      <p class="govuk-body">Use this service if:</p>
       <ul class="govuk-list govuk-list--bullet">
-        <li>a weeks notice if you have been employed between a calendar month and less than 2 years</li>
-        <li>a weeks notice for each complete year you’ve worked if you have been employed for 2 years or more (up to a maximum of 12 weeks for 12 years and over)</li>
+        <li>your employment has been terminated by your employer</li>
+        <li>you have a case reference number</li>
+        <li>you have your National Insurance number</li>
+        <li>you have an email address</li>
       </ul>
 
-      <div class="govuk-warning-text">
-        <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
-        <strong class="govuk-warning-text__text">
-          <span class="govuk-warning-text__assistive">Warning</span>
-          Because you’ve been made redundant, it’s very important you apply for employment related benefits such as Universal Credit and New Style Jobseeker’s Allowance.
-        </strong>
+      <a href="apply-for-a-claim" role="button" draggable="false" class="govuk-button govuk-button--start" data-module="govuk-button">
+        Start now
+        <svg class="govuk-button__start-icon" xmlns="http://www.w3.org/2000/svg" width="17.5" height="19" viewBox="0 0 33 40" aria-hidden="true" focusable="false">
+          <path fill="currentColor" d="M0 0h13l20 20-20 20H0l20-20z" />
+        </svg>
+      </a>
+
+      <div class="govuk-inset-text">
+        If you are making your claim from a computer in a public place, and you decide to cancel your claim, please use the Cancel and delete my data link. This will protect your privacy.
       </div>
 
-      <p class="govuk-body">If you later apply for loss of notice compensation, we’ll ask you about benefits you applied for during your notice period. We deduct them or benefits you were eligible for from your compensation. This includes any:</p>
-      <ul class="govuk-list govuk-list--bullet govuk-!-margin-bottom-9">
-        <li>new benefits you were awarded during your notice period</li>
-        <li>increase in existing benefits</li>
-        <li>benefits you could have been awarded during your notice period if you’d applied for them</li>
+      <h2 class="govuk-heading-m">Information that will help you</h2>
+      <ul class="govuk-list govuk-list--bullet">
+        <li>your official letter of redundancy</li>
+        <li>your employment details including dates and how much you were paid</li>
+        <li>your holiday entitlement and number of holidays taken</li>
+        <li>details of any money you are owed by the employer</li>
+        <li>copies of any letters sent to or received from your employer or an employment tribunal</li>
+        <li>details of any money you still owe to your employer</li>
+        <li>your bank or building society details (so we can pay you)</li>
       </ul>
 
-      <div class="govuk-form-group">
-        <fieldset class="govuk-fieldset" aria-describedby="changed-name-hint">
-          <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
-            <h2 class="govuk-fieldset__heading">
-              Do you want to claim compensation for loss of notice?
-            </h2>
-          </legend>
-          <div id="changed-name-hint" class="govuk-body">
-            We will send you an email asking you to complete a second online form after your notice period ends. You will need to complete this form so that we can pay your notice pay.
-          </div>
-          <div class="govuk-radios govuk-radios--inline" data-module="govuk-radios">
-            <div class="govuk-radios__item">
-              <input class="govuk-radios__input" id="changed-name" name="changed-name" type="radio" value="yes">
-              <label class="govuk-label govuk-radios__label" for="changed-name">
-                Yes
-              </label>
-            </div>
-            <div class="govuk-radios__item">
-              <input class="govuk-radios__input" id="changed-name-2" name="changed-name" type="radio" value="no">
-              <label class="govuk-label govuk-radios__label" for="changed-name-2">
-                No
-              </label>
-            </div>
-          </div>
-        </fieldset>
-      </div>
+      <h2 class="govuk-heading-m">Contact us if you need help using this service</h2>
+      <h2 class="govuk-heading-s govuk-!-margin-bottom-1">Email</h2>
+      <p class="govuk-body"><a href="#">redundancypaymentsonline@insolvency.gov.uk</a></p>
+      <h2 class="govuk-heading-s govuk-!-margin-bottom-1">Telephone</h2>
+      <p class="govuk-body">0330 331 0020 (select option 2)<br />
+        Opening hours are 9am to 5pm, Monday to Friday</p>
 
-      <button class="govuk-button" data-module="govuk-button">
-        Continue
-      </button>
-    </div>
-  </div>
-
-  <div class="govuk-grid-row">
-    <div class="govuk-grid-column-full">
-          <ul class="app-task-list__items" style="padding-left:0; margin-top: 0;">
-            <li class="app-task-list__item" style="border: 0">
-              <a href="#" class="app-task-list__task-name">
-                  Cancel and delete all details
-              </a>
-              <a href="progress-saved" class="app-task-list__tag">Save progress</a>
-            </li>
-          </ul>
     </div>
   </div>
 

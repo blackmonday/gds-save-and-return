@@ -1,0 +1,205 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Home – GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+<!-- ************************** -->
+<!-- ************************** -->
+<!-- PHASE BANNER AND BACK LINK -->
+<div class="govuk-grid-row govuk-!-margin-bottom-9" style="margin-top:-50px">
+  <div class="govuk-grid-column-full">
+
+    <div class="govuk-phase-banner">
+      <p class="govuk-phase-banner__content">
+        <strong class="govuk-tag govuk-phase-banner__content__tag">
+          beta
+        </strong>
+        <span class="govuk-phase-banner__text">
+          This is a new service – your <a class="govuk-link" href="#">feedback</a> will help us to improve it.
+        </span>
+      </p>
+    </div>
+
+    <a href="javascript:history.back()" class="govuk-back-link">Back</a>
+
+  </div>
+</div>
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <h1 class="govuk-heading-xl">Enter your details</h1>
+
+
+
+
+
+
+      <form class="form" action="new-your-email-address" method="post">
+
+        <div class="govuk-form-group">
+          <label class="govuk-label govuk-label--s" for="sort">
+            What is your title?
+          </label>
+          <select class="govuk-select" id="sort" name="sort">
+            <option value="published">Choose...</option>
+            <option value="updated" selected>Miss</option>
+            <option value="views">Mr</option>
+            <option value="comments">Ms</option>
+            <option value="comments">Mrs</option>
+            <option value="comments">Professer</option>
+            <option value="comments">Doctor</option>
+            <option value="comments">Lord</option>
+            <option value="comments">Reverend</option>
+          </select>
+        </div>
+
+        <div class="govuk-form-group">
+          <h1 class="govuk-label-wrapper"><label class="govuk-label govuk-label--s" for="event-name">
+              What is your first name?
+            </label>
+          </h1>
+          <input class="govuk-input" id="event-name" name="event-name" type="text">
+        </div>
+
+        <div class="govuk-form-group">
+          <h1 class="govuk-label-wrapper"><label class="govuk-label govuk-label--s" for="event-name">
+              What is your sursname?
+            </label>
+          </h1>
+          <input class="govuk-input" id="event-name" name="event-name" type="text">
+        </div>
+
+        <div class="govuk-form-group">
+          <fieldset class="govuk-fieldset" role="group" aria-describedby="passport-issued-hint">
+            <legend class="govuk-fieldset__legend govuk-label--s">
+              What is your date of birth?
+            </legend>
+            <div id="passport-issued-hint" class="govuk-hint">
+              For example, 27 3 2007
+            </div>
+            <div class="govuk-date-input" id="passport-issued">
+              <div class="govuk-date-input__item">
+                <div class="govuk-form-group">
+                  <label class="govuk-label govuk-date-input__label" for="passport-issued-day">
+                    Day
+                  </label>
+                  <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="passport-issued-day" name="passport-issued-day" type="text" pattern="[0-9]*" inputmode="numeric">
+                </div>
+              </div>
+              <div class="govuk-date-input__item">
+                <div class="govuk-form-group">
+                  <label class="govuk-label govuk-date-input__label" for="passport-issued-month">
+                    Month
+                  </label>
+                  <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="passport-issued-month" name="passport-issued-month" type="text" pattern="[0-9]*" inputmode="numeric">
+                </div>
+              </div>
+              <div class="govuk-date-input__item">
+                <div class="govuk-form-group">
+                  <label class="govuk-label govuk-date-input__label" for="passport-issued-year">
+                    Year
+                  </label>
+                  <input class="govuk-input govuk-date-input__input govuk-input--width-4" id="passport-issued-year" name="passport-issued-year" type="text" pattern="[0-9]*" inputmode="numeric">
+                </div>
+              </div>
+            </div>
+
+          </fieldset>
+        </div>
+
+        <div class="govuk-form-group">
+          <fieldset class="govuk-fieldset" aria-describedby="changed-name-hint">
+            <legend class="govuk-fieldset__legend govuk-fieldset__legend--s">
+              <h2 class="govuk-fieldset__heading">
+                What is your gender?
+              </h2>
+            </legend>
+            <div class="govuk-radios govuk-radios--inline" data-module="govuk-radios">
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="changed-name" name="changed-name" type="radio" value="yes">
+                <label class="govuk-label govuk-radios__label" for="changed-name">
+                  Male
+                </label>
+              </div>
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="changed-name-2" name="changed-name" type="radio" value="no">
+                <label class="govuk-label govuk-radios__label" for="changed-name-2">
+                  Female
+                </label>
+              </div>
+            </div>
+
+          </fieldset>
+        </div>
+
+        <div class="govuk-form-group">
+          <h1 class="govuk-label-wrapper"><label class="govuk-label govuk-label--s" for="event-name">
+              What is your contact address?
+            </label>
+          </h1>
+
+          <p class="govuk-label-wrapper"><label class="govuk-label" for="event-name">
+              Building and street
+            </label>
+          </p>
+          <input class="govuk-input govuk-!-margin-bottom-2" id="event-name" name="event-name" type="text" aria-describedby="event-name-hint">
+
+          <p class="govuk-label-wrapper"><label class="govuk-label" for="event-name">
+              Address line 2
+            </label>
+          </p>
+          <input class="govuk-input govuk-!-margin-bottom-2" id="event-name" name="event-name" type="text" aria-describedby="event-name-hint">
+
+          <p class="govuk-label-wrapper"><label class="govuk-label" for="event-name">
+              Address line 3
+            </label>
+          </p>
+          <input class="govuk-input govuk-!-margin-bottom-2" id="event-name" name="event-name" type="text" aria-describedby="event-name-hint">
+
+          <p class="govuk-label-wrapper"><label class="govuk-label" for="event-name">
+              Town or city
+            </label>
+          </p>
+          <input class="govuk-input govuk-!-margin-bottom-2" id="event-name" name="event-name" type="text" aria-describedby="event-name-hint">
+
+          <p class="govuk-label-wrapper"><label class="govuk-label" for="event-name">
+              County (optional)
+            </label>
+          </p>
+          <input class="govuk-input govuk-!-margin-bottom-2" id="event-name" name="event-name" type="text" aria-describedby="event-name-hint">
+
+          <p class="govuk-label-wrapper"><label class="govuk-label" for="event-name">
+              Postcode
+            </label>
+          </p>
+          <input class="govuk-input govuk-!-margin-bottom-2" id="event-name" name="event-name" type="text" aria-describedby="event-name-hint">
+
+          <div class="govuk-form-group">
+            <label class="govuk-label" for="sort">
+              Country
+            </label>
+            <select class="govuk-select" id="sort" name="sort">
+              <option value="published">United Kingdom</option>
+              <option value="updated" selected>Non-UK address</option>
+            </select>
+          </div>
+
+        </div>
+
+        <button class="govuk-button" data-module="govuk-button">
+          Continue
+        </button>
+
+        <p><a href="#">Cancel and delete all details</a></p>
+
+      </form>
+
+    </div>
+  </div>
+
+{% endblock %}

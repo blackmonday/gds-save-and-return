@@ -1,0 +1,74 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Home – GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+<!-- ************************** -->
+<!-- ************************** -->
+<!-- PHASE BANNER AND BACK LINK -->
+<div class="govuk-grid-row govuk-!-margin-bottom-9" style="margin-top:-50px">
+  <div class="govuk-grid-column-full">
+
+    <div class="govuk-phase-banner">
+      <p class="govuk-phase-banner__content">
+        <strong class="govuk-tag govuk-phase-banner__content__tag">
+          beta
+        </strong>
+        <span class="govuk-phase-banner__text">
+          This is a new service – your <a class="govuk-link" href="#">feedback</a> will help us to improve it.
+        </span>
+      </p>
+    </div>
+
+    <a href="javascript:history.back()" class="govuk-back-link">Back</a>
+
+  </div>
+</div>
+
+
+
+
+
+
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <h1 class="govuk-heading-xl">Apply for a claim</h1>
+
+      <div class="govuk-warning-text">
+        <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
+        <strong class="govuk-warning-text__text">
+          <span class="govuk-warning-text__assistive">Warning</span>
+            You cannot apply for a claim to the Insolvency Service if you resigned from your position.
+        </strong>
+      </div>
+
+      <p class="govuk-body">You can claim money if you've lost your job because your employer has been made insolvent.</p>
+      <p class="govuk-body">Use this service if:</p>
+      <ul class="govuk-list govuk-list--bullet">
+        <li>your employment has been terminated by your employer</li>
+        <li>you have a case reference number</li>
+        <li>you have your National Insurance number</li>
+        <li>you have an email address</li>
+      </ul>
+      <p class="govuk-body">If you don't enter any information for more than 30 minutes, then your claim will time out and you'll need to start again.</p>
+
+      <a href="new-enter-your-details" class="govuk-button" data-module="govuk-button">
+        New claim
+      </a>
+
+      <p class="govuk-body">or</p>
+
+      <a href="your-email-address" class="govuk-button govuk-button--secondary" data-module="govuk-button">
+        Continue your claim
+      </a>
+
+    </div>
+  </div>
+
+{% endblock %}

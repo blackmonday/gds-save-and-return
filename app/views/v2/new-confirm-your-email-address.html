@@ -1,0 +1,52 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Home – GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <h1 class="govuk-heading-xl">Confirm your email address</h1>
+
+      <p class="govuk-body">We have sent a code to the email address you gave us. You'll need to open your email in a new tab so you don't lose the progress of your application.</p>
+
+      <p class="govuk-body"><a href="#" class="govuk-link">Open a new browser tab</a></p>
+
+      <form class="form" action="new-confirm-your-details" method="post">
+
+        <div class="govuk-form-group">
+          <fieldset class="govuk-fieldset">
+
+              <label class="govuk-label govuk-!-font-weight-bold" for="6-digit-code">Confirmation code</label>
+              <div id="6-digit-code-hint" class="govuk-hint">
+                Enter your 5 digit confirmation code e.g. 12345. Your code will expire in 30 minutes.
+              </div>
+              <input class="govuk-input govuk-input--width-10" id="6-digit-code" name="6-digit-code" type="text">
+
+          </fieldset>
+        </div>
+
+        <div class="govuk-inset-text">
+          If you did not receive a code, you can double-check your email address by using the button below.
+        </div>
+
+        <p class="govuk-body govuk-!-margin-bottom-0">
+          <a href="#" class="govuk-button govuk-button--secondary" data-module="govuk-button">
+            I did not receive the code
+          </a>
+        </p>
+
+        <button class="govuk-button" data-module="govuk-button">
+          Continue
+        </button>
+
+        <p class="govuk-body"><a href="#" class="govuk-link">Cancel and delete all details</a></p>
+
+    </div>
+  </div>
+
+{% endblock %}
