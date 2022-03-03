@@ -10,20 +10,32 @@ router.post('/v1/enter-the-6-digit-code-and-your-date-of-birth', function(req, r
 */
 
 
-// Run this code when a form is submitted to 'juggling-balls-answer'
+
+
+
 router.post('/v1/enter-the-6-digit-code-and-your-date-of-birth', function (req, res) {
 
-  // Make a variable and give it the value from 'how-many-balls'
   var claimantEmail = req.session.data['claimant-email']
 
-  // Check whether the variable matches a condition
   if (claimantEmail == ""){
-    // Send user to next page
     res.redirect('/v1/sign-in-to-continue-your-claim-error')
   } else {
-    // Send user to ineligible page
     res.redirect('/v1/enter-the-6-digit-code-and-your-date-of-birth')
   }
+
+})
+
+
+
+
+
+router.post('/v2/new-confirm-your-details', function (req, res) {
+
+  var claimantAddressLine2 = req.session.data['claimant-address-line-2']
+  var claimantAddressLine3 = req.session.data['claimant-address-line-3']
+  var claimantAddressCounty = req.session.data['claimant-address-county']  
+
+  res.redirect('/v2/new-confirm-your-details')
 
 })
 

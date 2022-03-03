@@ -42,69 +42,69 @@
       <form class="form" action="new-your-email-address" method="post">
 
         <div class="govuk-form-group">
-          <label class="govuk-label govuk-label--s" for="sort">
+          <label class="govuk-label govuk-label--s" for="claimant-title">
             What is your title?
           </label>
-          <select class="govuk-select" id="sort" name="sort">
-            <option value="published">Choose...</option>
-            <option value="updated" selected>Miss</option>
-            <option value="views">Mr</option>
-            <option value="comments">Ms</option>
-            <option value="comments">Mrs</option>
-            <option value="comments">Professer</option>
-            <option value="comments">Doctor</option>
-            <option value="comments">Lord</option>
-            <option value="comments">Reverend</option>
+          <select class="govuk-select" id="sort" name="claimant-title">
+            <option value="" selected>Choose...</option>
+            <option value="Miss">Miss</option>
+            <option value="Mr">Mr</option>
+            <option value="Ms">Ms</option>
+            <option value="Mrs">Mrs</option>
+            <option value="Professer">Professer</option>
+            <option value="Doctor">Doctor</option>
+            <option value="Lord">Lord</option>
+            <option value="Reverend">Reverend</option>
           </select>
         </div>
 
         <div class="govuk-form-group">
-          <h1 class="govuk-label-wrapper"><label class="govuk-label govuk-label--s" for="event-name">
+          <h1 class="govuk-label-wrapper"><label class="govuk-label govuk-label--s" for="claimant-first-name">
               What is your first name?
             </label>
           </h1>
-          <input class="govuk-input" id="event-name" name="event-name" type="text">
+          <input class="govuk-input" id="claimant-first-name" name="claimant-first-name" type="text">
         </div>
 
         <div class="govuk-form-group">
-          <h1 class="govuk-label-wrapper"><label class="govuk-label govuk-label--s" for="event-name">
+          <h1 class="govuk-label-wrapper"><label class="govuk-label govuk-label--s" for="claimant-surname">
               What is your sursname?
             </label>
           </h1>
-          <input class="govuk-input" id="event-name" name="event-name" type="text">
+          <input class="govuk-input" id="claimant-surname" name="claimant-surname" type="text">
         </div>
 
         <div class="govuk-form-group">
-          <fieldset class="govuk-fieldset" role="group" aria-describedby="passport-issued-hint">
+          <fieldset class="govuk-fieldset" role="group" aria-describedby="claimant-dob-hint">
             <legend class="govuk-fieldset__legend govuk-label--s">
               What is your date of birth?
             </legend>
-            <div id="passport-issued-hint" class="govuk-hint">
+            <div id="claimant-dob-hint" class="govuk-hint">
               For example, 27 3 2007
             </div>
-            <div class="govuk-date-input" id="passport-issued">
+            <div class="govuk-date-input" id="claimant-dob">
               <div class="govuk-date-input__item">
                 <div class="govuk-form-group">
-                  <label class="govuk-label govuk-date-input__label" for="passport-issued-day">
+                  <label class="govuk-label govuk-date-input__label" for="claimant-dob-day">
                     Day
                   </label>
-                  <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="passport-issued-day" name="passport-issued-day" type="text" pattern="[0-9]*" inputmode="numeric">
+                  <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="claimant-dob-day" name="claimant-dob-day" type="text" pattern="[0-9]*" inputmode="numeric">
                 </div>
               </div>
               <div class="govuk-date-input__item">
                 <div class="govuk-form-group">
-                  <label class="govuk-label govuk-date-input__label" for="passport-issued-month">
+                  <label class="govuk-label govuk-date-input__label" for="claimant-dob-month">
                     Month
                   </label>
-                  <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="passport-issued-month" name="passport-issued-month" type="text" pattern="[0-9]*" inputmode="numeric">
+                  <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="claimant-dob-month" name="claimant-dob-month" type="text" pattern="[0-9]*" inputmode="numeric">
                 </div>
               </div>
               <div class="govuk-date-input__item">
                 <div class="govuk-form-group">
-                  <label class="govuk-label govuk-date-input__label" for="passport-issued-year">
+                  <label class="govuk-label govuk-date-input__label" for="claimant-dob-year">
                     Year
                   </label>
-                  <input class="govuk-input govuk-date-input__input govuk-input--width-4" id="passport-issued-year" name="passport-issued-year" type="text" pattern="[0-9]*" inputmode="numeric">
+                  <input class="govuk-input govuk-date-input__input govuk-input--width-4" id="claimant-dob-year" name="claimant-dob-year" type="text" pattern="[0-9]*" inputmode="numeric">
                 </div>
               </div>
             </div>
@@ -113,7 +113,7 @@
         </div>
 
         <div class="govuk-form-group">
-          <fieldset class="govuk-fieldset" aria-describedby="changed-name-hint">
+          <fieldset class="govuk-fieldset" aria-describedby="claimant-gender-hint">
             <legend class="govuk-fieldset__legend govuk-fieldset__legend--s">
               <h2 class="govuk-fieldset__heading">
                 What is your gender?
@@ -121,14 +121,14 @@
             </legend>
             <div class="govuk-radios govuk-radios--inline" data-module="govuk-radios">
               <div class="govuk-radios__item">
-                <input class="govuk-radios__input" id="changed-name" name="changed-name" type="radio" value="yes">
-                <label class="govuk-label govuk-radios__label" for="changed-name">
+                <input class="govuk-radios__input" id="claimant-gender" name="claimant-gender" type="radio" value="Male">
+                <label class="govuk-label govuk-radios__label" for="claimant-gender">
                   Male
                 </label>
               </div>
               <div class="govuk-radios__item">
-                <input class="govuk-radios__input" id="changed-name-2" name="changed-name" type="radio" value="no">
-                <label class="govuk-label govuk-radios__label" for="changed-name-2">
+                <input class="govuk-radios__input" id="claimant-gender-2" name="claimant-gender" type="radio" value="Female">
+                <label class="govuk-label govuk-radios__label" for="claimant-gender-2">
                   Female
                 </label>
               </div>
@@ -138,54 +138,54 @@
         </div>
 
         <div class="govuk-form-group">
-          <h1 class="govuk-label-wrapper"><label class="govuk-label govuk-label--s" for="event-name">
+          <h1 class="govuk-label-wrapper"><label class="govuk-label govuk-label--s" for="claimant-address">
               What is your contact address?
             </label>
           </h1>
 
-          <p class="govuk-label-wrapper"><label class="govuk-label" for="event-name">
+          <p class="govuk-label-wrapper"><label class="govuk-label" for="claimant-address-building-and-street">
               Building and street
             </label>
           </p>
-          <input class="govuk-input govuk-!-margin-bottom-2" id="event-name" name="event-name" type="text" aria-describedby="event-name-hint">
+          <input class="govuk-input govuk-!-margin-bottom-2" id="claimant-address-building-and-street" name="claimant-address-building-and-street" type="text" aria-describedby="claimant-address-building-and-street-hint">
 
-          <p class="govuk-label-wrapper"><label class="govuk-label" for="event-name">
+          <p class="govuk-label-wrapper"><label class="govuk-label" for="claimant-address-line-2">
               Address line 2
             </label>
           </p>
-          <input class="govuk-input govuk-!-margin-bottom-2" id="event-name" name="event-name" type="text" aria-describedby="event-name-hint">
+          <input class="govuk-input govuk-!-margin-bottom-2" id="claimant-address-line-2" name="claimant-address-line-2" type="text" aria-describedby="claimant-address-line-2-hint">
 
-          <p class="govuk-label-wrapper"><label class="govuk-label" for="event-name">
+          <p class="govuk-label-wrapper"><label class="govuk-label" for="claimant-address-line-3">
               Address line 3
             </label>
           </p>
-          <input class="govuk-input govuk-!-margin-bottom-2" id="event-name" name="event-name" type="text" aria-describedby="event-name-hint">
+          <input class="govuk-input govuk-!-margin-bottom-2" id="claimant-address-line-3" name="claimant-address-line-3" type="text" aria-describedby="claimant-address-line-3-hint">
 
-          <p class="govuk-label-wrapper"><label class="govuk-label" for="event-name">
+          <p class="govuk-label-wrapper"><label class="govuk-label" for="claimant-address-town-or-city">
               Town or city
             </label>
           </p>
-          <input class="govuk-input govuk-!-margin-bottom-2" id="event-name" name="event-name" type="text" aria-describedby="event-name-hint">
+          <input class="govuk-input govuk-!-margin-bottom-2" id="claimant-address-town-or-city" name="claimant-address-town-or-city" type="text" aria-describedby="claimant-address-town-or-city-hint">
 
-          <p class="govuk-label-wrapper"><label class="govuk-label" for="event-name">
+          <p class="govuk-label-wrapper"><label class="govuk-label" for="claimant-address-county">
               County (optional)
             </label>
           </p>
-          <input class="govuk-input govuk-!-margin-bottom-2" id="event-name" name="event-name" type="text" aria-describedby="event-name-hint">
+          <input class="govuk-input govuk-!-margin-bottom-2" id="claimant-address-county" name="claimant-address-county" type="text" aria-describedby="claimant-address-county-hint">
 
-          <p class="govuk-label-wrapper"><label class="govuk-label" for="event-name">
+          <p class="govuk-label-wrapper"><label class="govuk-label" for="claimant-address-postcode">
               Postcode
             </label>
           </p>
-          <input class="govuk-input govuk-!-margin-bottom-2" id="event-name" name="event-name" type="text" aria-describedby="event-name-hint">
+          <input class="govuk-input govuk-!-margin-bottom-2" id="claimant-address-postcode" name="claimant-address-postcode" type="text" aria-describedby="claimant-address-postcode-hint">
 
           <div class="govuk-form-group">
-            <label class="govuk-label" for="sort">
+            <label class="govuk-label" for="claimant-address-country">
               Country
             </label>
-            <select class="govuk-select" id="sort" name="sort">
-              <option value="published">United Kingdom</option>
-              <option value="updated" selected>Non-UK address</option>
+            <select class="govuk-select" id="claimant-address-country" name="claimant-address-country">
+              <option value="United Kingdom" selected>United Kingdom</option>
+              <option value="Non-UK address">Non-UK address</option>
             </select>
           </div>
 
