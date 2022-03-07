@@ -1,0 +1,86 @@
+
+{% extends "layout_unbranded.html" %}
+
+{% block pageTitle %}
+  Unbranded page template – {{ serviceName }} – GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      <h1 class="govuk-heading-xl">
+        Save and return design prototype
+        <!--<span class="govuk-caption-xl">v1.0</span>-->
+      </h1>
+      <p>
+        These design prototypes are a work in progress and subject to change.
+      </p>
+
+      <hr class="govuk-section-break govuk-section-break--xl govuk-section-break--visible">
+
+      <strong class="govuk-tag govuk-!-margin-bottom-2">
+        Current
+      </strong>
+
+      <h2 class="govuk-heading-m">Protoype 2</h2>
+      <p class="govuk-body">This prototype includes:</p>
+      <ul class="govuk-list govuk-list--bullet">
+        <li>Starting a new claim</li>
+        <li>Continue with a saved claim</li>
+        <li>Save whilst claim in progress</li>
+        <li>Example of the 5-digit code email</li>
+        <li>Example of a reminder email</li>
+        <li>Content updates</li>
+        <li>Bug fixes</li>
+      </ul>
+
+      <a href="v2/start-page" class="govuk-button" data-module="govuk-button">
+        Start prototype
+      </a>
+
+      <p><a href="v2/example-of-5-digit-code-email">View example of 5-digit code email</a></p>
+      <p><a href="v2/example-of-reminder-email">View example of reminder email</a></p>
+
+      <hr class="govuk-section-break govuk-section-break--xl govuk-section-break--visible">
+
+      <strong class="govuk-tag govuk-tag--purple govuk-!-margin-bottom-2">
+        Archived
+      </strong>
+
+      <h2 class="govuk-heading-m govuk-!-margin-bottom-2">Protoype 1</h2>
+      <p class="govuk-body">This prototype includes:</p>
+      <ul class="govuk-list govuk-list--bullet">
+        <li>Continue with a saved claim - unauthenticated starting point</li>
+        <li>Save whilst claim in progress - authenticated</li>
+        <li>Example of the 5-digit code email</li>
+        <li>Example of a reminder email</li>
+      </ul>
+
+      <a href="v1/start-page" class="govuk-button govuk-button--secondary" data-module="govuk-button">
+        Start prototype
+      </a>
+
+
+      <p><a href="v1/claim-for-reduncancy-an-monies-saved">Quick link to the claim progress page</a></p>
+      <p><a href="v1/example-of-6-digit-code-email">View example of 6-digit code email</a></p>
+      <p><a href="v1/example-of-reminder-email">View example of reminder email</a></p>
+
+      <!--
+      <h2 class="govuk-heading-m govuk-!-margin-bottom-2">Protoype 2</h2>
+      <p class="govuk-body">This prototype includes:</p>
+      <ul class="govuk-list govuk-list--bullet">
+        <li>Save whilst claim in progess - authenticated</li>
+      </ul>
+      <a href="v2/start-page" role="button" draggable="false" class="govuk-button govuk-button--start" data-module="govuk-button">
+        Start protoype 2
+        <svg class="govuk-button__start-icon" xmlns="http://www.w3.org/2000/svg" width="17.5" height="19" viewBox="0 0 33 40" aria-hidden="true" focusable="false">
+          <path fill="currentColor" d="M0 0h13l20 20-20 20H0l20-20z" />
+        </svg>
+      </a>
+      -->
+
+    </div>
+  </div>
+
+{% endblock %}
