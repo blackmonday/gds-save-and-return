@@ -1,0 +1,55 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Home – GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+<!-- ************************** -->
+<!-- ************************** -->
+<!-- PHASE BANNER AND BACK LINK -->
+<div class="govuk-grid-row govuk-!-margin-bottom-9" style="margin-top:-50px">
+  <div class="govuk-grid-column-full">
+
+    <div class="govuk-phase-banner">
+      <p class="govuk-phase-banner__content">
+        <strong class="govuk-tag govuk-phase-banner__content__tag">
+          beta
+        </strong>
+        <span class="govuk-phase-banner__text">
+          This is a new service – your <a class="govuk-link" href="#">feedback</a> will help us to improve it.
+        </span>
+      </p>
+    </div>
+  </div>
+</div>
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <h1 class="govuk-heading-xl">Access error or timeout</h1>
+
+      <p class="govuk-body">You have reached a page that you cannot access.</p>
+
+      <p class="govuk-body">This occurs when you haven't entered information for more than 30 minutes and your session has been timed out and your details removed.</p>
+
+      <p class="govuk-body">This is done for security reasons. To continue with your claim you'll need to start again. If you previously saved, you’ll need to start again from your last save.</p>
+
+      <p class="govuk-body">If you have submitted a claim, please wait for us to contact you.</p>
+
+      <h2 class="govuk-heading-m">Email</h2>
+      <p class="govuk-body"><a href="#">redundancyclaims@insolvency.gov.uk</a></p>
+
+      <h2 class="govuk-heading-m">Telephone</h2>
+      <p class="govuk-body">0330 331 0020</p>
+
+      <h2 class="govuk-heading-m">Address</h2>
+      <p class="govuk-body">Redundancy Payments Service<br />PO Box 16685<br />B2 2LX</p>
+      <p class="govuk-body">Opening hours are 9am to 5pm</p>
+
+    </div>
+  </div>
+
+{% endblock %}
