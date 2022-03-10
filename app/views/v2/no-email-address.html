@@ -38,23 +38,30 @@
   <div class="govuk-grid-row">
     <div class="govuk-grid-column-two-thirds">
 
-      <h1 class="govuk-heading-xl">Your email address</h1>
+      <h1 class="govuk-heading-xl">No email address</h1>
 
-      <p class="govuk-body">Tell us the  email address used to save your claim.</p>
+      <p class="govuk-body">If you do not give us a valid email address, we will:</p>
+      <ul class="govuk-list govuk-list--bullet">
+        <li>be unable to send you a summary of your application</li>
+        <li>send confirmation of payment by post</li>
+        <li>tell you when it is the right time for you to claim for loss of notice, if you are eligible to do so, by post</li>
+      </ul>
 
-      <div class="govuk-inset-text">
-        We will send you a code to confirm your email address as the next step.
-      </div>
 
-      <form class="form" action="confirm-your-email-address-and-date-of-birth" method="post">
+
+
+
+      <form class="form" action="end-of-prototype" method="post">
         <div class="govuk-form-group">
-          <fieldset class="govuk-fieldset">
-
-            <label class="govuk-label govuk-!-font-weight-bold" for="claimant-email">Email address</label>
-            <div id="claimant-email-hint" class="govuk-hint">
-              We’ll only use this to send you information about this claim.
+          <fieldset class="govuk-fieldset" aria-describedby="waste-hint">
+            <div class="govuk-checkboxes" data-module="govuk-checkboxes">
+              <div class="govuk-checkboxes__item">
+                <input class="govuk-checkboxes__input" id="waste" name="waste" type="checkbox" value="carcasses">
+                <label class="govuk-label govuk-checkboxes__label" for="waste">
+                  I understand that if I choose to proceed without my email that I will not be notified about my claim
+                </label>
+              </div>
             </div>
-            <input class="govuk-input" id="claimant-email" name="claimant-email" type="text">
 
           </fieldset>
         </div>

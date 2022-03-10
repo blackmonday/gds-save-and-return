@@ -37,18 +37,43 @@
 <div class="govuk-grid-row">
     <div class="govuk-grid-column-two-thirds">
 
+
+
+      <div class="govuk-error-summary" aria-labelledby="error-summary-title" role="alert" data-module="govuk-error-summary">
+        <h2 class="govuk-error-summary__title" id="error-summary-title">
+          There is a problem and your answers have not been saved
+        </h2>
+        <div class="govuk-error-summary__body">
+          <ul class="govuk-list govuk-error-summary__list">
+            <li>
+              <a href="#form-error">Select an answer</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+
+
+
       <span class="govuk-caption-m">Section 2 of 7</span>
       <h1 class="govuk-heading-xl">More information about your directorship</h1>
 
+
+
       <form class="form" action="end-of-prototype" method="post">
 
-        <div class="govuk-form-group">
-          <fieldset class="govuk-fieldset" aria-describedby="changed-name-hint">
+        <div class="govuk-form-group govuk-form-group--error">
+          <fieldset class="govuk-fieldset" aria-describedby="changed-name-hint" id="form-error">
             <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
               <h4 class="govuk-fieldset__heading">
                 Were you a shareholder of INSIGHT ARCHITECTURAL GLAZING LIMITED when you were dismissed?
               </h4>
             </legend>
+
+            <p id="national-insurance-number-error" class="govuk-error-message">
+              <span class="govuk-visually-hidden">Error:</span> Select an answer
+            </p>
+
             <div class="govuk-radios govuk-radios--inline" data-module="govuk-radios">
               <div class="govuk-radios__item">
                 <input class="govuk-radios__input" id="changed-name" name="changed-name" type="radio" value="yes">
@@ -70,8 +95,12 @@
         <button class="govuk-button" data-module="govuk-button">
           Save and continue
         </button>
+        <!--<a href="end-of-prototype" class="govuk-button" data-module="govuk-button">
+          Save and continue
+        </a>-->
 
       </form>
+
     </div>
 
 

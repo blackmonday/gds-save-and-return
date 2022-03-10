@@ -33,12 +33,30 @@ router.post('/v2/new-confirm-your-details', function (req, res) {
 
   var claimantAddressLine2 = req.session.data['claimant-address-line-2']
   var claimantAddressLine3 = req.session.data['claimant-address-line-3']
-  var claimantAddressCounty = req.session.data['claimant-address-county']  
+  var claimantAddressCounty = req.session.data['claimant-address-county']
 
   res.redirect('/v2/new-confirm-your-details')
 
 })
 
+
+
+
+
+router.post('/v2/end-of-prototype', function (req, res) {
+
+  var changedName = req.session.data['changed-name']
+
+  if (changedName == "yes"){
+    res.redirect('/v2/end-of-prototype')
+  } else if (changedName == "no") {
+    res.redirect('/v2/end-of-prototype')
+  } else {
+    res.redirect('/v2/more-information-about-your-directorship-error')
+
+  }
+
+})
 
 
 
