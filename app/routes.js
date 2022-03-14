@@ -58,7 +58,9 @@ router.post('/v2/end-of-prototype', function (req, res) {
 
 })
 
-
+router.post('/v2/end-of-prototype-2', function (req, res) {
+  res.redirect('/v2/end-of-prototype')
+})
 
 
 
