@@ -62,6 +62,13 @@ router.post('/v2/end-of-prototype-2', function (req, res) {
   res.redirect('/v2/end-of-prototype')
 })
 
+router.post('/v2/no-email-address', function (req, res) {
+
+  req.session.data['claimant-email'] = "No email provided"
+  res.redirect('/v2/new-confirm-your-details')
+
+})
+
 
 
 module.exports = router
