@@ -58,8 +58,8 @@ router.post('/v2/end-of-prototype', function (req, res) {
 
 })
 
-router.post('/v2/end-of-prototype-2', function (req, res) {
-  res.redirect('/v2/end-of-prototype')
+router.post('/v2/confirm-new-claim-started', function (req, res) {
+  res.redirect('/v2/new-claim-started-confrirmation')
 })
 
 router.post('/v2/no-email-address', function (req, res) {
