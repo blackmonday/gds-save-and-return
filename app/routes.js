@@ -59,6 +59,13 @@ router.post('/v2/end-of-prototype', function (req, res) {
 })
 
 router.post('/v2/confirm-new-claim-started', function (req, res) {
+
+  var claimantEmail = req.session.data['claimant-email']
+
+  if (claimantEmail == ""){
+    req.session.data['claimant-email'] = "XXX"
+  }
+
   res.redirect('/v2/new-claim-started-confrirmation')
 })
 
